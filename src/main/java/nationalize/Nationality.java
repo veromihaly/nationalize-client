@@ -4,10 +4,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 @lombok.Data
 public class Nationality {
 
@@ -23,11 +19,6 @@ public class Nationality {
 
         private String countryId;
         private float probability;
-
-        public Country(String countryId, float probability) {
-            this.countryId = countryId;
-            this.probability = probability;
-        }
 
     }
 }
